@@ -20,7 +20,7 @@ body {
 }
 
 .navbar ul li a {
-    color: white;
+    color: rgb(88, 0, 0);
     text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ ul {
 ul li {
     padding: 10px;
     margin: 5px;
-    background-color: #c44545;
+    background-color: #df3618;
     border: 1px solid #000000;
 }
 
@@ -99,8 +99,8 @@ ul li {
 
 /* Buton için hover efekti */
 button {
-    background-color: #a4b2c1; /* Mavi renk */
-    color: rgb(11, 105, 112);
+    background-color: #70cdda; /* Mavi renk */
+    color: rgb(78, 78, 78);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -109,7 +109,7 @@ button {
   }
   
   button:hover {
-    background-color: #499fd8; /* Daha koyu mavi */
+    background-color: #856f6f; /* Daha koyu mavi */
     transform: scale(1.1); /* Butonu büyüt */
   }
 
@@ -184,7 +184,7 @@ body {
   
   .navbar a {
     text-decoration: none;
-    color: rgb(138, 130, 130);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 500;
     padding: 8px 12px;
@@ -193,7 +193,7 @@ body {
   }
   
   .navbar a:hover {
-    color: #000000;
+    color: #ffffff;
   }
   
   /* Arama kutusu */
@@ -214,15 +214,15 @@ body {
     padding: 8px 12px;
     font-size: 16px;
     border: none;
-    background-color: rgb(9, 32, 83);
-    color: #27ca21;
+    background-color: rgb(146, 137, 137);
+    color: #ffffff;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .search-container button:hover {
-    background-color: #2a49b1;
+    background-color: #a5af4a;
   }
   
   /* Mobil uyum */
@@ -248,8 +248,4 @@ body {
     }
   }
     
-
-
-
-
   
