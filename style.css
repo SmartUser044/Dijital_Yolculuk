@@ -306,7 +306,7 @@ main {
 
 
 /* Mobil ve tablet görünümü */
-@media screen and (max-width: 7px) {
+@media screen and (max-width: 767px) {
   header h1 {
       font-size: 24px;
   }
@@ -319,6 +319,6 @@ main {
   }
 
   .content, .image {
-      width: 100%;
+      width: 1%;
   }
 }
