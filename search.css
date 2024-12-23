@@ -1,0 +1,66 @@
+/* CSS - styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #b18716;
+    padding: 1px 2px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .search-container button {
+    padding: 8px;
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Arama sonuçları */
+  .search-results {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .result-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-item h3 {
+    margin: 0;
+    color: #4CAF50;
+  }
+  
+  .result-item p {
+    color: #555;
+  }
+  

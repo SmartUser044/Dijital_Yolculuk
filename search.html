@@ -1,0 +1,36 @@
+<!-- search.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arama Sonuçları</title>
+  <link rel="stylesheet" href="search.css"> <!-- Eğer CSS dosyan varsa, bunu dahil et -->
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+        <form action="search.html" method="get">
+            <input type="text" placeholder="Ara..." name="q">
+            <button type="submit">Ara</button>
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="portfolio.html">Portfolyo</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="todo.html">To-Do List</a></li>
+    </ul>
+  </nav>
+
+  <div class="search-results">
+    <h2>Arama Sonuçları:</h2>
+    <div id="results"></div> <!-- Arama sonuçlarını burada göstereceğiz -->
+  </div>
+
+  <script src="search.js"></script> <!-- JavaScript dosyasını dahil ediyoruz -->
+</body>
+</html>
+
+
+
+
+
+

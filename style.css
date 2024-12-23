@@ -1,0 +1,255 @@
+/* Ana Sayfa Tasarımı */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+}
+
+.navbar ul li {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+}
+
+.Resim.png {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+}
+.text {
+    position: absolute;
+    top: 100px;    /* Üstten 50px uzaklık */
+    left: 20px;   /* Soldan 50px uzaklık */
+}
+
+/* To-Do List Sayfası Tasarımı */
+.content {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 10px;
+    margin: 5px;
+    background-color: #c44545;
+    border: 1px solid #000000;
+}
+
+/* Blog Sayfası Tasarımı */
+.blog-post {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.blog-post h2 {
+    color: #333;
+}
+
+.read-more {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Portföy Sayfası Tasarımı */
+.project {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.project h2 {
+    color: #333;
+}
+
+.view-project {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* Buton için hover efekti */
+button {
+    background-color: #a4b2c1; /* Mavi renk */
+    color: rgb(11, 105, 112);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Geçiş animasyonu */
+  }
+  
+  button:hover {
+    background-color: #499fd8; /* Daha koyu mavi */
+    transform: scale(1.1); /* Butonu büyüt */
+  }
+
+  
+
+  /* Başlık için animasyon */
+h1 {
+    opacity: 0;
+    transform: translateY(-20px); /* Başlık yukarıda başlar */
+    animation: fadeIn 1s forwards; /* 1 saniyede görünsün */
+  }
+  
+  /* Animasyon tanımı */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Normal yerine gelsin */
+    }
+  }
+  
+
+
+
+
+  /* Varsayılan stil (aydınlık tema) */
+body {
+    background-color: #b8b8b8;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Karanlık Tema */
+  body.dark {
+    background-color: #242323;
+    color: #ffffff;
+  }
+
+  
+
+
+
+/* Genel ayarlar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigasyon çubuğu */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  
+  /* Liste öğeleri */
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Linkler */
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: rgb(138, 130, 130);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #000000;
+  }
+  
+  /* Arama kutusu */
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .search-container button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(9, 32, 83);
+    color: #27ca21;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background-color: #2a49b1;
+  }
+  
+  /* Mobil uyum */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+  
+    .search-container {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+    
+
+
+
+
+  

@@ -1,0 +1,204 @@
+                    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo Örneği</title>
+    <style>
+        /* Tablo stili */
+        table {
+            border-collapse: collapse; /* Çizgileri birleştir */
+            width: 80%; /* Tablo genişliği */
+            margin: 20px auto; /* Ortala */
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        /* Başlık hücreleri */
+        th {
+            background-color: #4CAF50; /* Yeşil arka plan */
+            color: white; /* Beyaz yazı */
+            padding: 10px; /* Hücre içi boşluk */
+            text-align: left; /* Sol hizalama */
+        }
+
+        /* Veri hücreleri */
+        td {
+            padding: 10px; /* Hücre içi boşluk */
+            border: 1px solid #ddd; /* Hücre kenar çizgisi */
+        }
+
+        /* Satırların arka planı */
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Çift satırlar için açık gri */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff; /* Tek satırlar için beyaz */
+        }
+
+        /* Satır üzerine gelince */
+        tr:hover {
+            background-color: #f1f1f1; /* Hover efekti */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Yaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ali</td>
+                <td>Yılmaz</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Ayşe</td>
+                <td>Demir</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Mehmet</td>
+                <td>Çelik</td>
+                <td>28</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamik Tablo</title>
+    <style>
+        /* Tablo stili */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Form stili */
+        form {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Form -->
+    <form id="infoForm">
+        <input type="text" id="name" placeholder="Ad" required>
+        <input type="text" id="surname" placeholder="Soyad" required>
+        <input type="number" id="age" placeholder="Yaş" required>
+        <button type="submit">Ekle</button>
+    </form>
+
+    <!-- Tablo -->
+    <table>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Yaş</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Yeni bilgiler buraya eklenecek -->
+        </tbody>
+    </table>
+
+    <script>
+        // Form ve tablo elemanlarını seç
+        const form = document.getElementById('infoForm');
+        const tableBody = document.getElementById('tableBody');
+
+        // Form gönderildiğinde çalışacak fonksiyon
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Sayfanın yeniden yüklenmesini önler
+
+            // Form alanlarındaki değerleri al
+            const name = document.getElementById('name').value;
+            const surname = document.getElementById('surname').value;
+            const age = document.getElementById('age').value;
+
+            // Yeni bir tablo satırı oluştur
+            const newRow = document.createElement('tr');
+
+            // Hücreleri oluştur ve tabloya ekle
+            newRow.innerHTML = `
+                <td>${name}</td>
+                <td>${surname}</td>
+                <td>${age}</td>
+            `;
+
+            tableBody.appendChild(newRow); // Yeni satırı tabloya ekle
+
+            // Formu temizle
+            form.reset();
+        });
+    </script>
+</body>
+</html>
+
+
+
+
