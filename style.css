@@ -314,11 +314,11 @@ main {
   nav ul li {
       display: block;
       margin-right: 0;
-      margin-bottom: 10px;
+      margin-bottom: 100px;
       text-align: center;
   }
 
   .content, .image {
-      width: 1%;
+      width: 100%;
   }
 }
